@@ -19,7 +19,7 @@ ol, li{
 .brochure-card {
     background: white;
     border-radius: 5px;
-    padding: 2rem;
+    padding: 10px;
     position: relative;
     transition: all 0.3s ease;
     border: 1px solid rgba(113, 96, 39, 0.1);
@@ -66,7 +66,7 @@ ol, li{
 
 .download-btn {
     position: relative;
-    padding: 8px 45px;
+    padding: 15px 45px;
     /* background: linear-gradient(135deg, #6e8efb, #4a6cf7); */
     background-color: #716027;
     border: none;
