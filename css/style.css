@@ -1,0 +1,170 @@
+/*global css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, li{
+    list-style-type: none;
+}
+
+/*global css end*/
+
+.brochure-card {
+    background: white;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(113, 96, 39, 0.1);
+}
+
+.brochure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(113, 96, 39, 0.1);
+}
+
+.card-icon {
+    background: rgba(113, 96, 39, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+}
+
+.card-icon i {
+    font-size: 24px;
+    color: #716027;
+}
+
+.brochure-content h4 {
+    color: #716027;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.brochure-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.download-btn {
+    position: relative;
+    padding: 8px 45px;
+    /* background: linear-gradient(135deg, #6e8efb, #4a6cf7); */
+    background-color: #716027;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(106, 142, 251, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(106, 142, 251, 0.3);
+}
+
+.button-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-icon {
+    font-size: 18px;
+}
+
+.progress-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4CAF50;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.progress-check {
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease 0.2s;
+}
+
+/* Animation classes to be added via JavaScript */
+.download-btn.loading .button-text {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.download-btn.loading .progress-animation {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.download-btn.success .progress-check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* modified */
+
+
+
+/* exmp 3 */
+
+.button-exmp-3{
+    position: relative;
+    overflow: visible;
+    border-radius: 5px;
+}
+
+.button-exmp-3 .download-icon{
+    position: absolute;
+    top: -21px;
+    left: 30px;
+    height: 65px;
+    width: 40px;
+}
+
+.button-exmp-3 .download-icon img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-exmp-3 .button-text{
+    padding-left: 60px;
+}
+
+/* exmp 3 */
